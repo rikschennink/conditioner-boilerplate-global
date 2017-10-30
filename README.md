@@ -1,6 +1,6 @@
 # Conditioner Global Scope Boilerplate
 
-A global scope based boilerplate for [Conditioner](https://pqina.nl/conditioner).
+A global scope based boilerplate for [Conditioner](https://github.com/rikschennink/conditioner).
 
 Install dependencies from npm.
 
