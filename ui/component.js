@@ -1,31 +1,33 @@
-export default (element) => {
-    
-    console.log('Component mounted on', element);
-    
+self.component = (function(undefined) {
 
-    // logic here
-    element.textContent = 'Component mounted';
+    return function(element) {
 
-
-    // public component API
-    element.foo = () => {
-
-        console.log('foo called!');
-
-        // dispatch events to notify other components
-        element.dispatchEvent( new CustomEvent('bar') );
-    };
-
-
-    // expose destroy method
-    return () => {
+        console.log('Component mounted on', element);
         
-        // restore content
-        element.textContent = '';
+        // logic here
+        element.textContent = 'Component mounted';
+    
+    
+        // public component API
+        element.foo = function() {
+    
+            console.log('foo called!');
+    
+            // dispatch events to notify other components
+            element.dispatchEvent( new CustomEvent('bar') );
+        };
+    
+    
+        // expose destroy method
+        return function() {
+            
+            // restore content
+            element.textContent = '';
+    
+            // clean up methods
+            element.foo = undefined;
+    
+        };
+    }
 
-        // clean up methods
-        element.foo = undefined;
-
-    };
-
-};
+}());

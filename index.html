@@ -12,17 +12,10 @@
 
 <div data-module="component" data-context="@media (min-width:40em)"></div>
 
-<script src="./node_modules/conditioner-core/dist/conditioner-core.js"></script>
+<script src="/ui/component.js"></script>
+<script src="./node_modules/conditioner-core/umd/conditioner-core.js"></script>
 <script>
 
-    // apply custom settings
-    conditioner.addPlugin({
-    
-        // converts module aliases to paths
-        moduleSetName: (name) => '/ui/' + name + '.js',
-        
-    });
-    
     // lets go!
     conditioner.hydrate( document.documentElement );
 
