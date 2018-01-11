@@ -1,21 +1,22 @@
 {
-  "name": "conditioner-boilerplate-global",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rikschennink/conditioner-boilerplate-global.git"
-  },
-  "dependencies": {
-    "conditioner-core": "^2.1.0"
-  },
-  "scripts": {
-    "start": "node_modules/http-server/bin/http-server ./"
-  },
-  "devDependencies": {
-    "http-server": "^0.10.0"
-  },
-  "author": "Rik Schennink <hello@rikschennink.nl> (http://rikschennink.nl/)",
-  "license": "MIT"
+    "name": "conditioner-boilerplate-global",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url":
+            "https://github.com/rikschennink/conditioner-boilerplate-global.git"
+    },
+    "dependencies": {
+        "conditioner-core": "^2.3.0"
+    },
+    "scripts": {
+        "start": "node_modules/http-server/bin/http-server ./"
+    },
+    "devDependencies": {
+        "http-server": "^0.10.0"
+    },
+    "author": "Rik Schennink <hello@rikschennink.nl> (http://rikschennink.nl/)",
+    "license": "MIT"
 }
